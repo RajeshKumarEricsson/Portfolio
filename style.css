@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    transition: all 0.5s ease;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff6347;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 80px;
+        background: #333;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+section {
+    padding: 60px 0;
+}
+
+.about, .skills, .projects, .contact {
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills ul {
+    list-style: none;
+    text-align: center;
+}
+
+.skills ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-item {
+    width: 48%;
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.project-item h3 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+.education {
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.education-item h3 {
+    margin-bottom: 5px;
+    color: #555;
+    width:500px
+}
+
+.education-item p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.education-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.about-text {
+    padding-left: 200px; 
+    padding-right: 200px;
+}
+
+.about-text p {
+    line-height: 1.6; 
+    margin-bottom: 10px; 
+}
+.a{
+    text-decoration: underline;
+}
+.e{
+    text-decoration: underline;
+}
+.s{
+    text-decoration: underline;
+}
+.p{
+    text-decoration: underline;
+}
+.c{
+    text-decoration: underline;
+}
+.nt{
+    text-align: center;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Profile | Rajesh Kumar</title>
+        <link rel="icon" type="image/png" href="Rajesh Kumar.jpeg" sizes="32x32">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-logo">
+                <h1>Rajesh Kumar</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>    
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="a">ABOUT ME</h2>
+        </div>
+            <div class="about-content">
+                <img src="Rajesh Kumar.jpeg" class="profile-image">
+                <h1 class="nt">Rajesh Kumar</h1>
+                <br>
+                <p class = "about-text">I am the Head of Field Implementation for PAN India, committed to trust, transparency, honesty, and hard work. Together with my team, we have successfully completed numerous projects over the past few years, achieving extraordinary results. Our efforts have significantly transformed our company, supported by extensive background work. With over 20 years of experience in leading GSM 2G, 3G, LTE, and NR operation and maintenance, as well as network roll-out, I am currently employed at Ericsson India Pvt. Ltd. Previously, I worked with HFCL. I have led support functions such as people management, BSS, transmission, NRO, vendor management, and spare management. My diverse experience spans multiple customers and vendor environments. I have provided leadership, motivation, and direction to technical teams in unionized settings. I possess the ability to identify and resolve problems, multitask effectively, and prioritize tasks.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+    <div class="container">
+        <h2 class="e">EDUCATION</h2>
+    </div>
+        <div class="container">
+            <div class="education-item">
+                <img src="ED-1.jpeg" class="education-image">
+                <h3>Bachelor of Engineering (B.E.), Electronics & Telecommunication</h3>
+                <p><strong>Amravati University</strong>2003</p>
+            </div>
+            <div class="education-item">
+                <img src="ED-2.jpeg" class="education-image">
+                <h3>Master of Buisness Administration - MBA, operations Management and Supervision</h3>
+                <p><strong>Sikkim Manipal University - Distance Education</strong> 2019</p>
+            </div>
+
+
+        </div>
+        <div class="container">
+            <div class="education-item">
+                <img src="ED-3.png" class="education-image">
+                <h3>PMP, Project Management</h3>
+                <p><strong>PMI</strong> 2020</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="s">SKILLS</h2>
+        </div>
+            <ul>
+                <li>Operation & Maintenance</li>
+                <li>Project Roll-out</li>
+                <li>Operational Excellence</li>
+                <li>Process Management</li>
+                <li>Contract Management</li>
+                <li>Pilot Project Execution</li>
+                <li>Budget Control</li>
+                <li>Vendor Management</li>
+                <li>Spare Management</li>
+                <li>People Management</li>
+            </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="s">CONTACT ME</h2>
+        </div>
+        <form action="mailto:rajesh.tech23@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="submit">Send</button>
+        </form>
+        
+    
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rajesh Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
